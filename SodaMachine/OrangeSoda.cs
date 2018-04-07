@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Nickel : Coin
+    class OrangeSoda : Soda
     {
-        public Nickel()
+        public OrangeSoda()
         {
-            name = "nickel";
-            value = .05;
+            flavor = "orange";
+            price = .35;
         }
     }
 }

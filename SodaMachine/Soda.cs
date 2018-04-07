@@ -8,8 +8,8 @@ namespace SodaMachine
 {
     abstract class Soda
     {
-        string flavor;
-        double price;
+        protected string flavor;
+        protected double price;
 
         public string Flavor
         {

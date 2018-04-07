@@ -10,8 +10,8 @@ namespace SodaMachine
     {
         static void Main(string[] args)
         {
-            Coin attempt = new Quarter();
-            Console.WriteLine(attempt.Value);
+            SodaMachine attempt = new SodaMachine();
+            attempt.Run();
             Console.ReadKey();
         }
     }
