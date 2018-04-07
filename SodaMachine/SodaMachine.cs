@@ -168,7 +168,7 @@ namespace SodaMachine
         private void GiveSoda(string sodaToDispense)
         {
             sodaInMachine.RemoveSoda(sodaToDispense);
-            UserInterface.DisplayUserOption($"Here is your {sodaToDispense}!");
+            UserInterface.DisplayUserOption($"Here is your {sodaToDispense} soda!");
         }
 
         private void ReturnCoins(string message, List<Coin> coinsToReturn)

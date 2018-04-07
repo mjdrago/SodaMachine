@@ -44,25 +44,25 @@ namespace SodaMachine
             while (quarters.Count > 0 && changeRemaining >= quarters[0].Value)
             {
                 change.Add(new Quarter());
-                changeRemaining -= quarters[0].Value;
+                changeRemaining = Math.Round(changeRemaining - quarters[0].Value,2);
                 quarters.RemoveAt(0);
             }
             while (dimes.Count > 0 && changeRemaining >= dimes[0].Value)
             {
                 change.Add(new Dime());
-                changeRemaining -= dimes[0].Value;
+                changeRemaining = Math.Round(changeRemaining - dimes[0].Value,2);
                 dimes.RemoveAt(0);
             }
             while (nickels.Count > 0 && changeRemaining >= nickels[0].Value)
             {
                 change.Add(new Nickel());
-                changeRemaining -= nickels[0].Value;
+                changeRemaining = Math.Round(changeRemaining - nickels[0].Value,2);
                 nickels.RemoveAt(0);
             }
             while (pennies.Count > 0 && changeRemaining >= pennies[0].Value)
             {
                 change.Add(new Penny());
-                changeRemaining -= pennies[0].Value;
+                changeRemaining = Math.Round(changeRemaining - pennies[0].Value,2);
                 pennies.RemoveAt(0);
             }
             if (CoinTotal(change) == changeNeeded)
@@ -104,7 +104,7 @@ namespace SodaMachine
             double coinTotal = 0;
             foreach (Coin coin in coinsInserted)
             {
-                coinTotal += coin.Value;
+                coinTotal = Math.Round(coinTotal + coin.Value,2);
             }
             return coinTotal;
         }
