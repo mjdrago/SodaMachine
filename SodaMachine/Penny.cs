@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         public Penny()
         {
-            this.value = .01;
+            value = .01;
         }
     }
 }

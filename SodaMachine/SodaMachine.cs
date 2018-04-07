@@ -8,5 +8,10 @@ namespace SodaMachine
 {
     class SodaMachine
     {
+        CoinStorage bank;
+        public SodaMachine()
+        {
+            bank = new CoinStorage(20, 10, 20, 50);
+        }
     }
 }

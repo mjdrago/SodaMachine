@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Coin.cs" />
+    <Compile Include="CoinStorage.cs" />
     <Compile Include="Dime.cs" />
     <Compile Include="Nickel.cs" />
     <Compile Include="Penny.cs" />

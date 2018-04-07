@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Soda
+    abstract class Soda
     {
+        string flavor;
+        double price;
+
+        public string Flavor
+        {
+            get
+            {
+                return flavor;
+            }
+        }
+        public double Price
+        {
+            get
+            {
+                return price;
+            }
+        }
     }
 }

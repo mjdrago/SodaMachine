@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         public Dime()
         {
-            this.value = .1;
+            value = .1;
         }
     }
 }
